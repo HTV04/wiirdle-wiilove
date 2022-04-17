@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+	<name>Wiirdle</name>
+	<version>1.0.0</version>
+	<coder>HTV04</coder>
+	<short_description>Wordle clone for the Wii</short_description>
+	<long_description>Wiirdle is a Wordle clone for the Wii, powered by the WiiLÖVE framework.
+
+Every day, you will have six attempts to guess a five-letter word, with feedback given for each guess indicating when letters match or occupy the correct position.
+
+"Wordle" by Josh Wardle and the New York Times.</long_description>
+</app>

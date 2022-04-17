@@ -114,7 +114,7 @@ function love.load()
 	binser = require("lib.binser")
 
 	curDate = date()
-	firstDate = date(2022, 4, 2)
+	firstDate = date(2022, 4, 16)
 	day = math.floor(date.diff(curDate, firstDate):spandays())
 	words = require("data.words")
 	solutions = require("data.solutions")
