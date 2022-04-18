@@ -18,11 +18,13 @@
 # --------------------------------------------------------------------------------
 
 build:
-	rm -rf build
-	mkdir -p build/sd/apps/wiirdle
+	@rm -rf dist
+	@mkdir -p dist/sd/apps/wiirdle/data
 
-	cp -r res/* build/sd/apps/wiirdle
-	cp -r src build/sd/apps/wiirdle/data
+	@cp -r res/* dist/sd/apps/wiirdle
+	@cp -r src/* dist/sd/apps/wiirdle/data
 
-release: build
-	cd build/sd; zip -r -9 ../wiirdle.zip .
+	@cd dist/sd; zip -r -9 ../wiirdle.zip .
+
+clean:
+	@rm -rf dist
