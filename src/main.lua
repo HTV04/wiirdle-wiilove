@@ -1,5 +1,5 @@
 --[[----------------------------------------------------------------------------
-Wiirdle v1.0.0
+Wiirdle v1.0.1
 
 Copyright (C) 2022  HTV04
 
@@ -215,9 +215,9 @@ function love.load()
 
 	-- QWERTY layout, may be customizable in the future
 	keys = {
-		{"q", "w", "e", "r", "t", "y", "u", "i", "o", "p"},
-		{"a", "s", "d", "f", "g", "h", "j", "k", "l"},
-		{"enter", "z", "x", "c", "v", "b", "n", "m", "< (B)"}
+		{"q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "< (B)",},
+		{"a", "s", "d", "f", "g", "h", "j", "k", "l", "enter",},
+		{"z", "x", "c", "v", "b", "n", "m"}
 	}
 	keyCol, keyRow = 0, 0
 	keySize = {factor = 1} -- Will also have "timer" value
@@ -554,7 +554,7 @@ function love.draw()
 
 		-- Info
 		love.graphics.setFont(logoFont)
-		shadowText("Wiirdle #" .. save.day, 245, 35)
+		shadowText("Wiirdle #" .. save.day .. ": " .. solution, 195, 45)
 		shadowText("https://github.com/HTV04/wiirdle", 115, 455)
 		love.graphics.setFont(textFont)
 		shadowText("Press B to exit", 550, 475)
@@ -589,7 +589,7 @@ function love.draw()
 	love.graphics.setFont(logoFont)
 	love.graphics.print("WiiRDLE", 30, 27)
 	love.graphics.setFont(textFont)
-	love.graphics.print("v1.0.0", 92, 43)
+	love.graphics.print("v1.0.1", 92, 43)
 
 	love.graphics.print("Press HOME to view stats", 10, 82)
 	love.graphics.print("and change settings", 10, 95)
@@ -598,10 +598,11 @@ function love.draw()
 	love.graphics.print(tostring("==Credits=="), 480, 17)
 
 	love.graphics.print("By HTV04", 480, 43)
-	love.graphics.print("Powered by WiiLÖVE", 480, 56)
+	love.graphics.print("Fixes by CapCor", 480, 56)
+	love.graphics.print("Powered by WiiLÖVE", 480, 69)
 
-	love.graphics.print("\"Wordle\" by Josh Wardle", 480, 82)
-	love.graphics.print("and The New York Times", 480, 95)
+	love.graphics.print("\"Wordle\" by Josh Wardle", 480, 95)
+	love.graphics.print("and The New York Times", 480, 108)
 
 	-- Tiles
 	love.graphics.setFont(tileFont)
