@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <app version="1">
 	<name>Wiirdle</name>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<coder>HTV04</coder>
 	<short_description>Wordle clone for the Wii</short_description>
 	<long_description>Wiirdle is a Wordle clone for the Wii, powered by the WiiLÖVE framework.
