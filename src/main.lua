@@ -554,7 +554,7 @@ function love.draw()
 
 		-- Info
 		love.graphics.setFont(logoFont)
-		shadowText("Wiirdle #" .. save.day, 245, 35)
+		shadowText("Wiirdle #" .. save.day .. ": " .. solution, 195, 45)
 		shadowText("https://github.com/HTV04/wiirdle", 115, 455)
 		love.graphics.setFont(textFont)
 		shadowText("Press B to exit", 550, 475)
