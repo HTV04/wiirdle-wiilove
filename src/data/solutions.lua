@@ -721,7 +721,7 @@ return {
 	"SWIFT",
 	"THEFT",
 	"GLORY",
-	"APNIC",
+	"PANIC",
 	"GAMMA",
 	"GROUP",
 	"MIAMI",
